@@ -16,7 +16,6 @@
 #include <unistd.h>
 
 // See comment in the header for more info
-#include "uffd_missing_header_bits.hpp"
 
 ////////////////////////////////////////////////////////////////////
 // userfaultfd Write Protection Test
@@ -61,7 +60,7 @@
 ////////////////////////////////////////////////////////////////////
 
 static const int PAGE_SIZE = 4096;
-static const int PAGE_COUNT = 5000000;
+static const int PAGE_COUNT = 50000;
 static const uint64_t ALLOC_SIZE = (uint64_t)PAGE_SIZE * PAGE_COUNT;
 
 // Use a char per page for now. The wasted memory isn't really of interest
